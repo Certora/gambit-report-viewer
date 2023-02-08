@@ -1,0 +1,4 @@
+pre-commit:
+  commands:
+    build:
+      run: pnpm eslint --fix {staged_files} && git add {staged_files} && pnpm build && git add docs/*

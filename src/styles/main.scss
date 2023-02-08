@@ -1,0 +1,19 @@
+@import 'carbon-components/css/carbon-components.min.css';
+@import '@carbon/ibm-products/css/index-without-carbon.min.css';
+
+@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+@import 'prismjs/plugins/diff-highlight/prism-diff-highlight.css';
+
+/* Resetting base global value from carbon styling */
+p {
+  font-size: 14px;
+}
+
+/* Resetting Safari's user agent styling */
+button {
+  font-size: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
