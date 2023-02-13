@@ -1,5 +1,22 @@
 # [Gambit](https://github.com/Certora/gambit) report viewer
 
+## How to generate a visualization
+
+Hosted version (Github pages):
+
+1. visit this page: https://certora.github.io/gambit-report-viewer/
+2. choose the JSON report file. The file is not uploaded anywhere and instead is
+analyzed in the browser.
+
+Or, if you want to run the tool locally on your machine:
+
+1. clone the repo
+2. install [node v18](https://nodejs.org/en/) and [pnpm](https://pnpm.io/)
+3. run `pnpm install` to install all dependencies
+4. run `pnpm dev` to run a local webserver that serves the app
+5. open `http://localhost:5173/gambit-report-viewer/` in your browser
+6. choose the JSON report file.
+
 ## Report format
 
 Gambit report format is a JSON file of the following shape:
@@ -25,9 +42,3 @@ type GambitReport = {
   }[];
 }[]
 ```
-
-## Installation instructions
-
-1. install [node v18](https://nodejs.org/en/) and [pnpm](https://pnpm.io/)
-2. run `pnpm install` to install all dependencies
-3. run `pnpm dev` to run a local webserver that hosts the app

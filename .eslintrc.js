@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     node: true,
   },
-  ignorePatterns: ['**/dist/*', '**/node_modules/*', '**/public/*'],
+  ignorePatterns: ['**/dist/*', '**/node_modules/*', '**/public/*', '**/*.md'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
